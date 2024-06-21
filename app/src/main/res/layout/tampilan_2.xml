@@ -1,0 +1,126 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollable_text"
+    android:layout_below="@id/dexkrisi"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/panah_balik2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="@drawable/baseline_arrow_back_24" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:id="@+id/gambar_1"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="225dp"
+                    android:src="@drawable/aset3" />
+
+
+                <TextView
+                    android:id="@+id/dexkrisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gambar_1"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Patrick McHenry"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profesi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dexkrisi"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="DPR"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/asal_negara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profesi"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="America"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asal_negara"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Deskripsi"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/nama_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_marginTop="6dp"
+                    android:text="Patrick McHenry, yang menjabat sebagai ketua Komite Jasa Keuangan DPR AS, telah menjadi suara penting bagi industri crypto. Selama masa jabatannya, McHenry dikenal sebagai pendukung berbagai legislasi yang berfokus pada crypto. Dia telah berperan dalam mendorong tagihan yang bertujuan untuk memberikan kejelasan regulasi bagi aset digital.
+
+                Kepergiannya pada Januari 2025 akan menandai berakhirnya 20 tahun pengabdiannya sebagai wakil rakyat. McHenry juga sempat menjadi pembicara sementara DPR ketika anggota Partai Republik tidak dapat menyatukan suara untuk menggantikan mantan Pembicara Kevin McCarthy.
+
+                "
+                    android:layout_marginBottom="70dp"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clik"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="50px"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Share" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
